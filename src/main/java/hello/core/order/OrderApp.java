@@ -13,6 +13,9 @@ public class OrderApp {
 //        MemberSerivce memberSerivce = appConfig.memberService();
 //        OrderService orderService = appConfig.orderService();
 
+        // ApplicationContext(인터페이스) - 스프링 컨테이너
+        // 스프링 컨테이너는 XML을 기반으로 만들 수 있고, 에노테이션 기반의 자바 설정 클래스로 만들 수 있다.
+        //
         ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfig.class);
 
         MemberSerivce memberSerivce = applicationContext.getBean("memberService", MemberSerivce.class);
