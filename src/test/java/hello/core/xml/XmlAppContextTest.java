@@ -11,8 +11,8 @@ public class XmlAppContextTest {
     void xmlAppContext() {
 
         // appConfig.xml 파일을 생성해서 구현하면 똑같음.
-        ApplicationContext ac = new GenericXmlApplicationContext("appConfig.xml");
-        MemberSerivce memberService = ac.getBean("memberService", MemberSerivce.class);
-        Assertions.assertThat(memberService).isInstanceOf(MemberSerivce.class);
+//        ApplicationContext ac = new GenericXmlApplicationContext("appConfig.xml");
+//        MemberSerivce memberService = ac.getBean("memberService", MemberSerivce.class);
+//        Assertions.assertThat(memberService).isInstanceOf(MemberSerivce.class);
     }
 }
